@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nidhi - Personal Finance Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f5f0fa, #e0d4f7);
+      min-height: 100vh;
+      color: #4b0082;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6a0dad, #8a2be2);
+      color: white;
+      padding: 20px 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .dashboard {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .dashboard h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #4b0082;
+    }
+
+    .balance-card {
+      background: white;
+      display: inline-block;
+      padding: 25px 40px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 20px rgba(75, 0, 130, 0.2);
+      margin-bottom: 30px;
+    }
+
+    .balance-card p {
+      font-size: 24px;
+      color: #6a0dad;
+      margin: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #6a0dad, #8a2be2);
+      color: white;
+      padding: 15px 35px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 30px;
+      margin-top: 20px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #8a2be2, #6a0dad);
+    }
+
+    .features {
+      margin: 70px auto;
+      width: 90%;
+      max-width: 1200px;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 32px;
+      margin-bottom: 50px;
+      color: #4b0082;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .feature {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      width: 260px;
+      box-shadow: 0px 6px 15px rgba(75, 0, 130, 0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px rgba(75, 0, 130, 0.25);
+    }
+
+    .feature h4 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #6a0dad;
+    }
+
+    .feature p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .feature-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="assets/images/nidhi-logo.png" alt="Nidhi Logo" class="logo">
+      <h1>Nidhi</h1>
+    </div>
+    <nav>
+      <a href="add_transaction.html">➕ Add Transaction</a>
+      <a href="view_transactions.jsp">📜 View Transactions</a>
+      <a href="login.html">🚪 Logout</a>
+    </nav>
+  </header>
+
+  <section class="dashboard">
+    <h2>Welcome, User!</h2>
+   
+    <a href="add_transaction.html" class="btn">➕ Add New Transaction</a>
+  </section>
+
+  <section class="features">
+    <h3>Why Choose Nidhi?</h3>
+    <div class="feature-list">
+      <div class="feature">
+        <h4>💰 Track Income & Expenses</h4>
+        <p>Log your earnings and spendings easily and manage your money wisely with detailed reports.</p>
+      </div>
+      <div class="feature">
+        <h4>📊 Real-time Balance</h4>
+        <p>View your updated balance instantly every time you add or remove a transaction.</p>
+      </div>
+      <div class="feature">
+        <h4>🛡️ Secure & Private</h4>
+        <p>Your data is safe and protected with secure login systems and encrypted storage.</p>
+      </div>
+      <div class="feature">
+        <h4>📅 Easy Transaction History</h4>
+        <p>Browse your past transactions with smart filtering and quick export options.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

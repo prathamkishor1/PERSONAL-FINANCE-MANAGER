@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f3f0ff; /* Light Purple Background */
+    text-align: center;
+}
+
+/* Navbar */
+header {
+    background: #6a0dad; /* Dark Purple */
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Yellow Highlight */
+}
+
+/* Hero Section */
+.hero {
+    background: #8000ff; /* Vibrant Purple */
+    color: white;
+    padding: 60px 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Yellow color for "Manage Your Finances Wisely" text */
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn, .btn-secondary {
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn {
+    background: #ffcc00;
+}
+
+.btn-secondary {
+    background: #6a0dad;
+}
+
+.btn:hover, .btn-secondary:hover {
+    transform: scale(1.1);
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #6a0dad;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f3f0ff;
+    text-align: center;
+}
+
+.login-container, .register-container, .transaction-container {
+    background: white;
+    width: 350px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #6a0dad;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #6a0dad;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #8000ff;
+}
+
+.transaction-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.transaction-table th, .transaction-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.transaction-table th {
+    background: #6a0dad;
+    color: white;
+}
+
+/* About Us Section (Team Contributors) */
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 50px 0;
+    padding: 0 20px;
+    flex-wrap: wrap; /* This ensures the content will wrap if the screen is too narrow */
+}
+
+.team-member {
+    width: 23%; /* Each member takes 1/4 of the page */
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.team-member img:hover {
+    transform: scale(1.1); /* Hover effect for images */
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.team-member .contribution {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 40px; /* Adjust as needed */
+    height: 40px;
+    margin-right: 10px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    margin-right: 10px;
+}

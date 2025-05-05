@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Nidhi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f5f0fa, #e0d4f7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px 60px;
+      border-radius: 15px;
+      box-shadow: 0px 6px 20px rgba(75, 0, 130, 0.3);
+      width: 500px;
+      max-width: 90%;
+      text-align: center;
+    }
+
+    .logo-container {
+      margin-bottom: 25px;
+    }
+
+    .logo {
+      width: 70px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #6a0dad;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      align-self: flex-start;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #4b0082;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .btn {
+      background-color: #6a0dad;
+      color: white;
+      border: none;
+      padding: 12px 0;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 18px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #4b0082;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 15px;
+    }
+
+    p a {
+      color: #6a0dad;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    p a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-container">
+    <div class="logo-container">
+      <img src="assets/images/nidhi-logo.png" alt="Nidhi Logo" class="logo">
+      <h2>Login to Nidhi</h2>
+    </div>
+
+    <form action="/PersonalFinanceManager/LoginServlet" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="off">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <button type="submit" class="btn">Login</button>
+
+      <p>Don't have an account? <a href="register.html">Register</a></p>
+    </form>
+  </div>
+
+</body>
+</html>

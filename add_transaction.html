@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Transaction - Nidhi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f5f0fa, #e0d7f5);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4b0082;
+      padding: 20px;
+    }
+
+    .form-container {
+      background: white;
+      padding: 50px 40px;
+      border-radius: 18px;
+      box-shadow: 0px 10px 25px rgba(75, 0, 130, 0.25);
+      width: 95%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .form-container h1 {
+      margin-bottom: 30px;
+      font-size: 36px;
+      color: #6a0dad;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input[type="text"], input[type="number"], select {
+      padding: 16px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      font-size: 18px;
+      background-color: #fafafa;
+      transition: all 0.3s;
+    }
+
+    input[type="text"]:focus, input[type="number"]:focus, select:focus {
+      border-color: #6a0dad;
+      background-color: #fff;
+      box-shadow: 0 0 8px rgba(106, 13, 173, 0.2);
+      outline: none;
+    }
+
+    .btn {
+      background: linear-gradient(90deg, #6a0dad, #8a2be2);
+      color: white;
+      padding: 16px;
+      font-size: 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #8a2be2, #6a0dad);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 40px 20px;
+      }
+
+      .form-container h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h1>Add Transaction</h1>
+    <form action="addTransaction" method="post">
+      <input type="text" name="title" placeholder="Transaction Title" required>
+      <input type="number" name="amount" placeholder="Amount (₹)" step="0.01" required>
+      <select name="type" required>
+        <option value="">Select Type</option>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button class="btn" type="submit">➕ Add Transaction</button>
+    </form>
+  </div>
+
+</body>
+</html>
